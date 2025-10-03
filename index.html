@@ -23,8 +23,13 @@
 					<div id="intro">
 						<h1>Temi Aborode<br />
 						<span style="font-size: 0.6em; color: #18bfef;">Data Analyst & Business Intelligence Specialist</span></h1>
+						<p class="highlight-text">Delivering <strong>25% efficiency improvements</strong> and <strong>data-driven growth</strong> for organizations</p>
 						<p>I transform complex data into actionable business insights using <strong>SQL</strong>, <strong>Python</strong>, and <strong>Power BI</strong>.<br />
-						Helping organizations make data-driven decisions that drive growth and efficiency.</p>
+						Helping organizations make strategic decisions that drive measurable results.</p>
+						<div class="intro-buttons">
+							<a href="#projects" class="button primary large">View My Projects</a>
+							<a href="#contact" class="button large">Hire Me</a>
+						</div>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Explore My Work</a></li>
 						</ul>
@@ -39,15 +44,17 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Portfolio</a></li>
+							<li><a href="#projects">Projects</a></li>
 							<li><a href="#about">About</a></li>
 							<li><a href="#skills">Skills</a></li>
+							<li><a href="#hire-me">Why Hire Me</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/temitheanalyst" 
 								class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://github.com/Temitheanalyst1" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="mailto:taborode9@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="#" onclick="copyToClipboard('taborode9@gmail.com'); return false;" class="icon solid alt fa-envelope" title="Click to copy email to clipboard"><span class="label">Email</span></a></li>
 						</ul>
 					</nav>
 
@@ -382,30 +389,47 @@
 						</section>
 
 						
+						<!-- Hire Me Section -->
+						<section id="hire-me" class="hire-me-section">
+							<header class="major">
+								<h2>Why Hire Me?</h2>
+								<p>I deliver measurable results that impact your bottom line</p>
+							</header>
+							
+							<div class="row">
+								<div class="col-4 col-12-medium">
+									<div class="hire-me-card">
+										<span class="icon solid fa-chart-line"></span>
+										<h3>Data-Driven Results</h3>
+										<p>I've consistently delivered 20-30% efficiency improvements through data analysis and optimization strategies.</p>
+									</div>
+								</div>
+								<div class="col-4 col-12-medium">
+									<div class="hire-me-card">
+										<span class="icon solid fa-lightbulb"></span>
+										<h3>Problem Solver</h3>
+										<p>I transform complex business challenges into actionable insights that drive strategic decision-making.</p>
+									</div>
+								</div>
+								<div class="col-4 col-12-medium">
+									<div class="hire-me-card">
+										<span class="icon solid fa-users"></span>
+										<h3>Team Collaborator</h3>
+										<p>I excel at communicating technical findings to diverse stakeholders, bridging the gap between data and business teams.</p>
+									</div>
+								</div>
+							</div>
+							
+							<ul class="actions special">
+								<li><a href="#contact" class="button primary large">Contact Me</a></li>
+								<li><a href="#" onclick="copyToClipboard('taborode9@gmail.com'); return false;" class="button large" title="Click to copy email to clipboard">taborode9@gmail.com</a></li>
+							</ul>
+						</section>
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<section id="contact">
-							<form method="post" action="#" name="contact-form">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" required />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" required />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3" required></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="primary" /></li>
-								</ul>
-							</form>
 						</section>
 						<section class="split contact">
 							<section class="alt">
@@ -414,12 +438,12 @@
 								Open to relocation opportunities</p>
 							</section>
 							<section>
-								<h3>Phone</h3>
-								<p><a href="tel:+1234567890">Available upon request</a></p>
+								<h3>WhatsApp</h3>
+								<p><a href="https://wa.link/6zpnqv">Available upon request</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="mailto:taborode9@gmail.com">taborode9@gmail.com</a></p>
+								<p><a href="#" onclick="copyToClipboard('taborode9@gmail.com'); return false;" title="Click to copy to clipboard">taborode9@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Professional Links</h3>
@@ -427,7 +451,7 @@
 									<li><a href="https://www.linkedin.com/in/temitheanalyst" 
 										class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://github.com/Temitheanalyst1" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="mailto:taborode9@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="#" onclick="copyToClipboard('taborode9@gmail.com'); return false;" class="icon solid alt fa-envelope" title="Click to copy email to clipboard"><span class="label">Email</span></a></li>
 									<li><a href="#" class="icon solid alt fa-file-pdf" onclick="downloadResume()"><span class="label">Resume</span></a></li>
 								</ul>
 							</section>
@@ -459,28 +483,32 @@
 			<script>
 				// Resume download functionality
 				function downloadResume() {
-					const resumeText = `
-Hi! Thank you for your interest in my resume. 
-
-I'd be happy to share my detailed CV with you. Please contact me directly at:
-📧 taborode9@gmail.com
-💼 LinkedIn: https://www.linkedin.com/in/temitheanalyst
-
-I typically respond within 24 hours and can provide:
-• Detailed resume in PDF format
-• Portfolio case studies
-• References upon request
-• Salary expectations and availability
-
-Looking forward to connecting with you!
-
-Best regards,
-Temi Aborode
-Data Analyst & BI Specialist`;
-					
-					alert(resumeText);
-				}
-				
+  const modal = document.createElement('div');
+  modal.classList.add('custom-modal');
+  modal.innerHTML = `
+    <div class="custom-modal-content">
+      <span class="custom-modal-close" onclick="this.parentElement.parentElement.remove()">&times;</span>
+      <h3>Temi Aborode – Data Analyst</h3>
+      <p>I'd be happy to share my detailed CV with you. Please contact me directly at:</p>
+      <p>
+        📧 <span onclick="copyToClipboard('taborode9@gmail.com')" 
+           style="cursor:pointer; text-decoration:underline; color:#007acc;" 
+           title="Click to copy email to clipboard">taborode9@gmail.com</span><br>
+        💼 <a href="https://www.linkedin.com/in/temitheanalyst" target="_blank">LinkedIn Profile</a>
+      </p>
+      <p>I typically respond within 24 hours and can provide:</p>
+      <ul>
+        <li>Detailed resume (PDF format)</li>
+        <li>Portfolio case studies</li>
+        <li>References upon request</li>
+        <li>Salary expectations and availability</li>
+      </ul>
+      <p>Looking forward to connecting with you!<br><strong>Temi Aborode</strong></p>
+    </div>
+  `;
+  document.body.appendChild(modal);
+}
+	
 				// Contact form enhancement
 				document.addEventListener('DOMContentLoaded', function() {
 					const form = document.querySelector('form[name="contact-form"]');
@@ -506,7 +534,7 @@ Data Analyst & BI Specialist`;
 							
 							// Show success message
 							setTimeout(() => {
-								alert('Thank you for your message! Your email client should open now. If not, please email me directly at taborode9@gmail.com');
+								alert('Thank you for your message! Your email client should open now. If not, you can click on any email link on this page to copy taborode9@gmail.com to your clipboard.');
 							}, 500);
 						});
 					}
@@ -611,6 +639,15 @@ Data Analyst & BI Specialist`;
 						fabButton.style.visibility = 'hidden';
 					}
 				});
+
+				// Function to copy text to clipboard
+				function copyToClipboard(text) {
+					navigator.clipboard.writeText(text).then(function() {
+						alert('Email copied to clipboard: ' + text);
+					}, function(err) {
+						console.error('Could not copy text: ', err);
+					});
+				}
 			</script>
 
 	</body>
