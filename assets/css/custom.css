@@ -96,6 +96,27 @@ body::after {
     box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.5);
 }
 
+/* Video Container Styling */
+.video-container {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-container h3 {
+    margin-bottom: 1rem;
+    color: #18bfef;
+    font-weight: 600;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Section backgrounds with glassmorphism */
 #main > section,
 #main > article {
